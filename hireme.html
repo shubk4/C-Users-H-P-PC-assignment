@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hire me form</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url('black3.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 21px;
+            top: 18px;
+            border: 2px solid rgb(255, 30, 30);
+            border-radius: 48px;
+        }
+
+        .left img {
+            height: 129px;
+            width: 125px;
+            border-radius: 195px
+        }
+
+        .mid {
+            border-radius: 32px;
+            background-color: rgb(255, 30, 30);
+            border: 2px solid rgb(2, 13, 46);
+            display: block;
+            margin: 21px auto;
+            width: 38%;
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 21px;
+            top: 35px;
+            border: 2px solid rgb(255, 30, 30);
+            border-radius: 8px;
+        }
+
+        .navi li {
+            display: inline-block;
+            margin: auto;
+        }
+
+        a {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 18;
+            font-weight: bold;
+            padding: 10px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        .container {
+            display: inline-block;
+            position: absolute;
+            top: 100px;
+            right: 50px;
+            width: 30%;
+            margin: 20px 0px 59px 0px;
+            /* border: 2px solid tomato; */
+            align-content: center;
+        }
+
+        .form-group input {
+            font-family: 'Ubuntu', sans-serif;
+            text-align: center;
+            display: block;
+            width: 372px;
+            padding: 3px;
+            border: 2px solid black;
+            margin: 6px auto;
+            font-size: 17px;
+            border-radius: 6px;
+        }
+
+        .radio {
+            background-color: rgb(61, 60, 60);
+            border-radius: 8px;
+            /* border: 2px solid rgb(255, 30, 30); */
+            color: rgb(255, 30, 30);
+            font-family: 'Ubuntu', sans-serif;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .btn:hover {
+            background-color: rgb(61, 60, 60);
+            cursor: pointer;
+        }
+
+        .btn {
+            display: block;
+            width: 107px;
+            margin: 26px auto 5px;
+            padding: 5px 14px;
+            border-radius: 10px;
+            background-color: rgb(255, 30, 30);
+            color: black;
+            font-size: medium;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .text {
+            border-radius: 10px 10px 0px 10px;
+            text-align: center;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 17px;
+            width: 372px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="h">
+        <div class="left">
+            <img src="logor.png" alt="" srcset="">
+        </div>
+        <div class="mid">
+            <ul class="navi">
+                <li><a href="webdev.html" target="_blank">Home</a></li>
+                <li><a href="#" target="_blank">About us</a></li>
+                <li><a href="#" target="_blank">Contact details</a></li>
+                <li><a href="#" target="_blank">Portfolio</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <input style="border-radius: 8px;" type="text" placeholder="Search in the website">
+        </div>
+    </header>
+    <div class="container">
+        <h2 style="font-family:'Ubuntu', sans-serif;color:rgb(255, 30, 30);text-align: center;">Fill the form</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="organisation name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="contact">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="expected pay">
+            </div>
+            <div class="form-group">
+                <textarea name="work" class="text" cols="49" rows="5" placeholder="Explain your work"></textarea>
+            </div>
+            <div class="radio">
+                Amount negotiable : YES <input type="radio" name="pay"> NO <input type="radio" name="pay">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
